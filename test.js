@@ -6,13 +6,13 @@ var fs = require('fs');
 var rimraf = require('rimraf');
 
 afterEach(function () {
-  rimraf.sync('temp');
+  rimraf.sync('test/temp');
   rimraf.sync('tmp');
 });
 
 it('should compile React', function () {
   assert.equal(
-    fs.readFileSync('expected/test.js', 'utf8'),
-    fs.readFileSync('temp/test.js', 'utf8')
+    fs.readFileSync('test/expected/test.js', 'utf8'),
+    fs.readFileSync('test/temp/test.js', 'utf8')
   );
 });
