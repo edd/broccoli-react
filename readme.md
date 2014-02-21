@@ -1,6 +1,6 @@
-# broccoli-react
+# [broccoli](https://github.com/joliss/broccoli)-[react](https://github.com/facebook/react) [![Build Status](https://travis-ci.org/eddhannay/broccoli-react.png?branch=master)](https://travis-ci.org/eddhannay/broccoli-react)
 
-A React filter for Broccoli.
+A [React JSX](https://github.com/facebook/react) filter for [broccoli](https://github.com/joliss/broccoli).
 
 ## Installation
 
