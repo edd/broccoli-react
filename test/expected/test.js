@@ -1,11 +1,11 @@
 /** @jsx React.DOM */
 /*jslint indent: 2, node: true, nomen: true, browser: true*/
-/*global Class, React, require */
+/*global React */
 'use strict';
-module.exports = React.createClass({
+module.exports = React.createClass({displayName: 'exports',
   render: function () {
     return (
-        React.DOM.h1(null, "Output")
+      React.DOM.h1(null, "Output")
     );
   }
 });
