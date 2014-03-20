@@ -1,7 +1,7 @@
 {
   "name": "broccoli-react",
   "description": "Convert Facebook React JSX files to JS",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Edd Hannay <site@edd.fm>",
   "main": "index.js",
   "license": "MIT",
@@ -16,12 +16,12 @@
     "compile"
   ],
   "dependencies": {
-    "react-tools": "~0.9.0",
-    "broccoli-filter": "~0.0.1"
+    "react-tools": "~0.10.0-rc1",
+    "broccoli-filter": "~0.1.4"
   },
   "devDependencies": {
     "mocha": "*",
-    "broccoli": "~0.2.0",
+    "broccoli": "~0.3.0",
     "rimraf": "~2.2.6"
   },
   "scripts": {
