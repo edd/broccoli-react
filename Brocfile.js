@@ -3,7 +3,7 @@
 module.exports = function (broccoli) {
   var build = require('./index');
 
-  var tree = build(broccoli.makeTree('./test/fixture/'));
+  var tree = build('./test/fixture/');
 
   return build(tree, {extensions: ['js']});
 };

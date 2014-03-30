@@ -27,4 +27,4 @@ describe('File creation', function(){
       fs.readFileSync('test/temp/js/test-options.js', 'utf8')
     );
   });
-}
+});
