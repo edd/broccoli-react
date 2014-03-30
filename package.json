@@ -1,7 +1,7 @@
 {
   "name": "broccoli-react",
   "description": "Convert Facebook React JSX files to JS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Edd Hannay <site@edd.fm>",
   "main": "index.js",
   "license": "MIT",

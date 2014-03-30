@@ -7,10 +7,21 @@ A [React JSX](https://github.com/facebook/react) filter for [broccoli](https://g
 ```bash
 npm install --save broccoli-react
 ```
-
 ## Usage
 
 ```js
 var filterReact = require('broccoli-react');
 tree = filterReact(tree);
+```
+
+## Options
+
+### extensions
+Type: `Array`
+Default: `['jsx']`
+
+Specify the extensions for the source files.
+
+```js
+tree = filterReact(tree, {extensions: ['js']});
 ```
