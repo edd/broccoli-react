@@ -15,7 +15,7 @@ function ReactFilter (inputTree, options) {
 
   this.inputTree = inputTree;
   this.options = options || {};
-  if (options.extensions) {
+  if (this.options.extensions) {
     this.extensions = options.extensions;
   }
 }
