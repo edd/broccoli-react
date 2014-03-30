@@ -15,6 +15,9 @@ function ReactFilter (inputTree, options) {
 
   this.inputTree = inputTree;
   this.options = options || {};
+  if (options.extensions) {
+    this.extensions = options.extensions;
+  }
 }
 
 ReactFilter.prototype.extensions = ['jsx'];
