@@ -16,7 +16,7 @@
     "compile"
   ],
   "dependencies": {
-    "react-tools": "~0.11.x",
+    "react-tools": "~0.12.x",
     "broccoli-filter": "~0.1.x"
   },
   "devDependencies": {
