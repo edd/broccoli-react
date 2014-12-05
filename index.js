@@ -24,7 +24,7 @@ ReactFilter.prototype.extensions = ['jsx'];
 ReactFilter.prototype.targetExtension = 'js';
 
 ReactFilter.prototype.processString = function (string) {
-  var result = react(string);
+  var result = react(string, this.options.transformOptions);
 
   return result;
 };
