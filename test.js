@@ -27,4 +27,13 @@ describe('File creation', function(){
       fs.readFileSync('test/temp/js/test-options.js', 'utf8')
     );
   });
+
+  it('should pass transform options', function () {
+    var harmonyTest = fs.readFileSync('test/expected/harmony.js', 'utf8');
+
+    assert.equal(
+      harmonyTest,
+      fs.readFileSync('test/temp/jsx/harmony.js', 'utf8')
+    );
+  });
 });
