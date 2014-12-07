@@ -15,6 +15,7 @@ function ReactFilter (inputTree, options) {
 
   this.inputTree = inputTree;
   this.options = options || {};
+  this.transform = this.options.transform || {};
   if (this.options.extensions) {
     this.extensions = options.extensions;
   }
@@ -24,7 +25,7 @@ ReactFilter.prototype.extensions = ['jsx'];
 ReactFilter.prototype.targetExtension = 'js';
 
 ReactFilter.prototype.processString = function (string) {
-  var result = react(string);
+  var result = react(string, this.transform);
 
   return result;
 };

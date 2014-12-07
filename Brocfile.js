@@ -5,7 +5,7 @@ function react() {
 
   var tree = build('./test/fixture/');
 
-  return build(tree, {extensions: ['js']});
+  return build(tree, {extensions: ['js'], transform: { harmony: true }});
 }
 
 module.exports = react();
