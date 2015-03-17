@@ -16,13 +16,13 @@
     "compile"
   ],
   "dependencies": {
-    "react-tools": "~0.12.x",
-    "broccoli-filter": "~0.1.x"
+    "broccoli-filter": "^0.1.11",
+    "react-tools": "^0.13.1"
   },
   "devDependencies": {
+    "broccoli": "^0.13.3",
     "mocha": "*",
-    "broccoli": "0.12.x",
-    "rimraf": "2.2.x"
+    "rimraf": "^2.3.2"
   },
   "scripts": {
     "pretest": "broccoli build test/temp",
