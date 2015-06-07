@@ -25,7 +25,11 @@ ReactFilter.prototype.extensions = ['jsx'];
 ReactFilter.prototype.targetExtension = 'js';
 
 ReactFilter.prototype.processString = function (string) {
-  var result = react(string, this.transform);
+  try {
+    var result = react(string, this.transform);
+  } catch (exception) {
+    console.error("Error while compiling React tree: %s", exception);
+  }
 
   return result;
 };
