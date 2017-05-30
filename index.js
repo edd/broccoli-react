@@ -2,6 +2,7 @@
 
 var Filter = require('broccoli-filter');
 var babel = require('babel-core');
+var reactPreset = require('babel-preset-react');
 
 module.exports = ReactFilter;
 
@@ -26,7 +27,7 @@ ReactFilter.prototype.targetExtension = 'js';
 ReactFilter.prototype.processString = function (string) {
   var result = babel.transform(string, {
     babelrc: false,
-    presets: ['react']
+    presets: [reactPreset]
   }).code;
 
   return result;
