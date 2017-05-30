@@ -2,14 +2,11 @@
 /*global React */
 'use strict';
 
-var _require = require('../js/foo'),
-    bar = _require.bar,
-    baz = _require.baz;
-
+var { bar, baz } = require('../js/foo');
 module.exports = React.createClass({
   displayName: 'exports',
 
-  render: function render() {
+  render: function () {
     return React.createElement(
       'h1',
       null,

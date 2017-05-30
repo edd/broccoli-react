@@ -26,7 +26,7 @@ ReactFilter.prototype.targetExtension = 'js';
 ReactFilter.prototype.processString = function (string) {
   var result = babel.transform(string, {
     babelrc: false,
-    presets: ['env', 'react']
+    presets: ['react']
   }).code;
 
   return result;

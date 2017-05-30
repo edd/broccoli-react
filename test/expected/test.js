@@ -5,7 +5,7 @@
 module.exports = React.createClass({
   displayName: 'exports',
 
-  render: function render() {
+  render: function () {
     return React.createElement(
       'h1',
       null,

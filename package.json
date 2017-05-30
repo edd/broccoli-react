@@ -23,7 +23,6 @@
   ],
   "dependencies": {
     "babel-core": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
     "broccoli-filter": "^0.1.11"
   },
