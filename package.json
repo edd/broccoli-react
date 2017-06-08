@@ -3,10 +3,12 @@
   "description": "Convert Facebook React JSX files to JS",
   "version": "0.7.1",
   "author": "Edd Hannay <site@edd.fm>",
-  "contributors": [{
-    "name": "Rick Harrison",
-    "email": "r@rickharrison.me"
-  }],
+  "contributors": [
+    {
+      "name": "Rick Harrison",
+      "email": "r@rickharrison.me"
+    }
+  ],
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -20,8 +22,9 @@
     "compile"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.11",
-    "react-tools": "^0.13.1"
+    "babel-core": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "broccoli-filter": "^0.1.11"
   },
   "devDependencies": {
     "broccoli": "^0.13.3",

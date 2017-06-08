@@ -1,7 +1,8 @@
 'use strict';
 
 var Filter = require('broccoli-filter');
-var react = require('react-tools').transform;
+var babel = require('babel-core');
+var reactPreset = require('babel-preset-react');
 
 module.exports = ReactFilter;
 
@@ -15,7 +16,6 @@ function ReactFilter (inputTree, options) {
 
   this.inputTree = inputTree;
   this.options = options || {};
-  this.transform = this.options.transform || {};
   if (this.options.extensions) {
     this.extensions = options.extensions;
   }
@@ -25,7 +25,10 @@ ReactFilter.prototype.extensions = ['jsx'];
 ReactFilter.prototype.targetExtension = 'js';
 
 ReactFilter.prototype.processString = function (string) {
-  var result = react(string, this.transform);
+  var result = babel.transform(string, {
+    babelrc: false,
+    presets: [reactPreset]
+  }).code;
 
   return result;
 };
