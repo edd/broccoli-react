@@ -9,18 +9,14 @@
       "email": "r@rickharrison.me"
     }
   ],
+  "engines": { "node": ">= 4" },
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/eddhannay/broccoli-react"
   },
-  "keywords": [
-    "broccoli-plugin",
-    "react",
-    "preprocessor",
-    "compile"
-  ],
+  "keywords": ["broccoli-plugin", "react", "preprocessor", "compile"],
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-preset-react": "^6.24.1",
