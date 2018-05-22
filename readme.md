@@ -22,6 +22,15 @@ Default: `['jsx']`
 
 Specify the extensions for the source files.
 
+### babelOptions
+Type: `Object`
+Default: `{}`
+
+Specify options for babel, useful for e.g. plugins, transforms etc.
+
 ```js
-tree = filterReact(tree, {extensions: ['js']});
+tree = filterReact(tree, {
+  extensions: ['js'],
+  babelOptions: { plugins: ["transform-class-properties"] }
+});
 ```
