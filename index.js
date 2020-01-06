@@ -20,6 +20,7 @@ function ReactFilter (inputTree, options) {
   if (this.options.extensions) {
     this.extensions = options.extensions;
   }
+  Filter.call(this, inputTree);
 }
 
 ReactFilter.prototype.extensions = ['jsx'];
